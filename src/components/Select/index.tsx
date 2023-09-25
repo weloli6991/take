@@ -41,7 +41,11 @@ export const SelectComponent: React.FC<ISelectProps> = ({
       return {
         ...styles,
         backgroundColor: "#fff",
-        color: "#000",
+        color: "#1d2c4b",
+        fontFamily: "Inter",
+        fontSize: 14,
+        fontStyle: "normal",
+        fontWeight: "400",
         cursor: "pointer",
 
         ":hover": {
@@ -66,15 +70,18 @@ export const SelectComponent: React.FC<ISelectProps> = ({
     },
     multiValueLabel: (styles, { data }) => ({
       ...styles,
-      color: "#1D2C4B",
+      color: "#1d2c4b",
       fontFamily: "Inter",
-      fontSize: 12,
+      fontSize: 14,
       fontStyle: "normal",
-      fontWeight: 500,
+      fontWeight: "400",
     }),
     multiValueRemove: (styles, { data }) => ({
       ...styles,
-      color: "#000",
+      color: "#1d2c4b",
+      fontFamily: "Inter",
+      fontSize: 14,
+      fontStyle: "normal",
       borderWidth: 0,
       ":hover": {
         cursor: "pointer",
@@ -83,6 +90,13 @@ export const SelectComponent: React.FC<ISelectProps> = ({
     indicatorSeparator: (styles) => ({
       ...styles,
       display: isMulti ? "block" : "none",
+    }),
+    singleValue: (styles) => ({
+      ...styles,
+      color: "#1d2c4b",
+      fontFamily: "Inter",
+      fontSize: 14,
+      fontStyle: "normal",
     }),
   };
 
